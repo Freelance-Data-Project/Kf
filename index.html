@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Vishva Book Publication - Online support and book publication assistance. Chat with our team on Telegram.">
+  <meta name="robots" content="index,follow">
+  <title>Vishva Book Publication | Online Support</title>
+
+  <!-- Meta Pixel: replace the ID below if your active Pixel is different. -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1108882688727136');
+    fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1108882688727136&ev=PageView&noscript=1"
+    alt=""></noscript>
+
+  <style>
+    :root{
+      --navy:#10285f; --blue:#087ff5; --blue2:#20a7ff;
+      --green:#c7f2d0; --text:#10254e;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text); background:
+      radial-gradient(circle at 15% 15%,rgba(255,255,255,.35),transparent 25%),
+      linear-gradient(135deg,#0b75b8,#56b7e9 48%,#0b4f91);
+      display:flex; align-items:center; justify-content:center; padding:28px 14px;
+    }
+    .card{
+      width:min(760px,100%); overflow:hidden; border-radius:30px; background:#fff;
+      box-shadow:0 24px 70px rgba(0,35,80,.35);
+    }
+    header{
+      display:flex; align-items:center; gap:18px; padding:26px 28px 22px;
+      position:relative; background:#fff;
+    }
+    .logo{
+      width:104px;height:104px;border-radius:50%;object-fit:cover;
+      border:5px solid #1674dd; background:#fff;
+      display:grid;place-items:center;color:#1674dd;font-weight:900;font-size:12px;
+    }
+    .brand h1{margin:0;font-size:clamp(28px,5vw,48px);line-height:1.04;letter-spacing:-1.5px}
+    .online{margin-top:8px;font-size:24px;color:#4a4f66;display:flex;align-items:center;gap:9px}
+    .dot{width:15px;height:15px;border-radius:50%;background:#31cf61;display:inline-block}
+    .close{position:absolute;right:24px;top:18px;font-size:42px;line-height:1;color:#28304d;font-weight:300}
+    .chat{
+      background:
+       radial-gradient(circle at 20% 20%,rgba(255,255,255,.2),transparent 24%),
+       #bff0cd;
+      min-height:540px; padding:72px 34px 54px; position:relative;
+    }
+    .pattern{
+      position:absolute;inset:0;opacity:.14;
+      background-image:
+       radial-gradient(circle at 12% 18%,transparent 0 17px,#378b65 18px 20px,transparent 21px),
+       radial-gradient(circle at 78% 28%,transparent 0 15px,#378b65 16px 18px,transparent 19px),
+       radial-gradient(circle at 30% 76%,transparent 0 13px,#378b65 14px 16px,transparent 17px);
+      background-size:170px 150px,210px 180px,190px 160px;
+    }
+    .bubble{
+      position:relative; width:min(590px,100%); background:#fff; border-radius:28px 28px 28px 8px;
+      padding:30px 34px; box-shadow:0 9px 18px rgba(28,100,60,.08); margin-bottom:64px;
+    }
+    .bubble:before{content:"";position:absolute;left:0;top:0;border-style:solid;border-width:0 26px 26px 0;border-color:transparent #fff transparent transparent;transform:translateX(-1px)}
+    .bubble p{margin:0 0 28px;font-size:clamp(27px,4.5vw,42px);font-weight:600;letter-spacing:-.8px}
+    .bubble p:last-child{margin:0;font-weight:500}
+    .time{float:right;font-size:17px;color:#788099;margin-top:15px;font-weight:400}
+    .cta-wrap{position:relative;display:flex;justify-content:center}
+    .cta{
+      width:min(650px,100%); border:0; border-radius:80px; padding:23px 30px;
+      background:linear-gradient(180deg,#1397ff,#0879e9); color:#fff; cursor:pointer;
+      font-size:clamp(23px,4vw,34px);font-weight:800;letter-spacing:-.4px;
+      display:flex;align-items:center;justify-content:center;gap:22px;
+      box-shadow:0 0 0 3px rgba(85,220,255,.75),0 0 34px rgba(24,197,255,.8),0 16px 30px rgba(0,74,180,.28);
+      transition:.18s transform,.18s filter;
+      animation:pulse 1.8s infinite;
+    }
+    .cta:hover{transform:translateY(-2px);filter:brightness(1.05)}
+    .telegram{width:45px;height:45px;display:grid;place-items:center}
+    .telegram svg{width:100%;height:100%;fill:#fff}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(85,220,255,.75),0 0 26px rgba(24,197,255,.65),0 16px 30px rgba(0,74,180,.25)}50%{box-shadow:0 0 0 5px rgba(85,220,255,.85),0 0 42px rgba(24,197,255,.95),0 16px 30px rgba(0,74,180,.25)}}
+    .countdown{text-align:center;margin:22px 0 0;font-size:16px;color:#245f48}
+    .cancel{border:0;background:transparent;text-decoration:underline;cursor:pointer;color:#245f48}
+    footer{background:#fff;text-align:center;padding:18px 15px 22px;font-size:14px;color:#6b7184}
+    footer a{color:#1a70d4;text-decoration:none;margin:0 8px}
+    .note{margin-top:16px;font-size:13px;line-height:1.5;color:#5c6870;text-align:center}
+    @media(max-width:560px){
+      body{padding:10px}.card{border-radius:22px} header{padding:20px 18px}.logo{width:72px;height:72px}
+      .online{font-size:18px}.close{right:15px;font-size:34px}.chat{padding:48px 17px 40px;min-height:500px}
+      .bubble{padding:23px 22px;margin-bottom:50px}.bubble p{font-size:27px}.cta{padding:20px 18px;gap:12px}
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <header>
+      <div class="logo" aria-label="Vishva Book Publication logo">VBP</div>
+      <div class="brand">
+        <h1>Vishva Book Publication</h1>
+        <div class="online">Online <span class="dot" aria-label="online"></span></div>
+      </div>
+      <div class="close" aria-hidden="true">×</div>
+    </header>
+
+    <section class="chat" aria-label="Chat with Vishva Book Publication">
+      <div class="pattern"></div>
+
+      <div class="bubble">
+        <p>Hi there 👋</p>
+        <p>How can I help you? <span class="time">11:07</span></p>
+      </div>
+
+      <div class="cta-wrap">
+        <a id="telegramBtn"
+           class="cta"
+           href="https://t.me/NEHA_BOOK_PUBLICATION2/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Chat on Telegram">
+          <span class="telegram" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M21.7 3.3 18.5 20c-.24 1.18-.86 1.47-1.75.92l-4.86-3.58-2.35 2.26c-.26.26-.48.48-.98.48l.35-4.95 9.01-8.14c.39-.35-.09-.55-.61-.2L6.17 13.88 1.39 12.39c-1.04-.32-1.06-1.04.22-1.54L20.3 3.62c.88-.32 1.65.2 1.4-.32Z"/></svg>
+          </span>
+          Chat on Telegram
+        </a>
+      </div>
+
+      <div class="countdown" id="countdown">
+        Opening Telegram in <strong id="seconds">8</strong> seconds…
+        <button class="cancel" id="cancel" type="button">Cancel</button>
+      </div>
+
+      <div class="note">
+        You can cancel the automatic redirect and use the button whenever you are ready.
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Vishva Book Publication ·
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </footer>
+  </main>
+
+<script>
+  const telegramUrl = "https://t.me/NEHA_BOOK_PUBLICATION2/";
+  const btn = document.getElementById("telegramBtn");
+  const secondsEl = document.getElementById("seconds");
+  const countdown = document.getElementById("countdown");
+  const cancel = document.getElementById("cancel");
+  let seconds = 8;
+  let cancelled = false;
+
+  function trackTelegramClick(source) {
+    try {
+      if (typeof fbq === "function") {
+        fbq("trackCustom", "TelegramClick", {source: source});
+      }
+    } catch(e) {}
+  }
+
+  btn.addEventListener("click", () => trackTelegramClick("button"));
+
+  const timer = setInterval(() => {
+    if (cancelled) return;
+    seconds--;
+    secondsEl.textContent = seconds;
+    if (seconds <= 0) {
+      clearInterval(timer);
+      trackTelegramClick("auto_redirect");
+      window.location.href = telegramUrl;
+    }
+  }, 1000);
+
+  cancel.addEventListener("click", () => {
+    cancelled = true;
+    clearInterval(timer);
+    countdown.innerHTML = "Automatic redirect cancelled. <a href='" + telegramUrl + "' target='_blank' rel='noopener noreferrer'>Open Telegram</a>";
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
